@@ -1,0 +1,182 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Parkinsans:wght@300..800&display=swap");
+
+/* Global */
+body {
+  background-image: url(../images/bg.svg);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+:root {
+  --primary-color: #5b5b5b;
+  --white-color: white;
+  --dark-color: black;
+  --input-focus-border: #8b8b8b79;
+  --input-focus-shadow: #2e2e2e40;
+  --main-transition: 0.5s;
+}
+
+::selection {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 100vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-color);
+  border-radius: 100vh;
+  box-shadow: 0rem 0rem 0.625rem 0rem #eeeeee8c inset;
+}
+
+.parkinsans-font {
+  font-family: "Parkinsans", sans-serif;
+}
+
+.sans-font {
+  font-family: "PT Sans Caption", serif;
+}
+
+.alert {
+  padding: 10px 14px;
+}
+
+.hide {
+  display: none !important;
+}
+
+#success-cr {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  opacity: 0;
+  transition: all var(--main-transition);
+}
+
+#success-cr p {
+  color: var(--primary-color);
+}
+
+#failed-cr {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  opacity: 0;
+  transition: all var(--main-transition);
+}
+
+#failed-cr p {
+  color: var(--primary-color);
+}
+
+.w-adjust-auto {
+  width: 50%;
+}
+/* Auth */
+.form-control:focus {
+  color: var(--bs-body-color);
+  border-color: var(--input-focus-border);
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--input-focus-shadow);
+}
+
+#login h1,
+#signup h1 {
+  font-size: 28px;
+}
+
+input {
+  color: var(--primary-color) !important;
+}
+
+.new-txt {
+  color: var(--primary-color);
+  position: relative;
+  font-size: 26px;
+}
+
+.new-txt::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  top: 50%;
+  right: 0;
+  background-color: var(--primary-color);
+}
+
+.new-txt::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  background-color: var(--primary-color);
+}
+
+.signup-btn,
+.login-btn {
+  padding-block: 9px;
+}
+
+.goLogin {
+  font-size: 14px;
+}
+
+.goLogin .login-back {
+  cursor: pointer;
+}
+
+#login i,
+#signup i {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* Home */
+#home .logout-btn {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  border: 1px solid var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all var(--main-transition);
+  z-index: 999;
+}
+
+#home .logout-btn i {
+  color: var(--primary-color);
+  transition: all var(--main-transition);
+}
+
+#home .logout-btn:hover {
+  background-color: var(--primary-color);
+}
+
+#home .logout-btn:hover i {
+  color: var(--white-color);
+}
+
+#home .head h1 {
+  font-size: 50px;
+  filter: drop-shadow(7px 7px 5px var(--primary-color));
+}
+
+#home #userName {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}

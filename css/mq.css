@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+  .w-adjust-auto {
+    width: 65%;
+  }
+}
+@media (max-width: 992px) {
+  #login h1,
+  #signup h1 {
+    font-size: 24px;
+  }
+
+  .alert {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+  
+  #success-cr p,
+  #failed-cr p {
+    font-size: 15px;
+  }
+
+  .w-adjust-auto {
+    width: 75%;
+  }
+  /* Auth */
+  button,
+  input,
+  label {
+    font-size: 15px !important;
+  }
+
+  #login i,
+  #signup i {
+    font-size: 15px;
+  }
+
+  .new-txt {
+    font-size: 22px;
+  }
+
+  /* Home */
+  #home .head h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .alert {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+
+  #login h1,
+  #signup h1 {
+    font-size: 22px;
+  }
+
+  .alert {
+    padding: 10px 14px;
+  }
+
+  #success-cr p,
+  #failed-cr p {
+    font-size: 14px;
+  }
+
+  /* Auth */
+  button,
+  input,
+  label {
+    font-size: 14px !important;
+  }
+
+  #login i,
+  #signup i {
+    font-size: 14px;
+  }
+
+  .signup-btn,
+  .login-btn {
+    padding-block: 7px;
+  }
+
+  .new-txt {
+    font-size: 16px;
+  }
+
+  .new-txt::after {
+    height: 1px;
+  }
+
+  .new-txt::before {
+    height: 1px;
+  }
+
+  .goLogin {
+    font-size: 12px;
+  }
+
+  /* Home */
+  #home .logout-btn {
+    right: 30px;
+  }
+
+  #home .head h1 {
+    font-size: 29px;
+  }
+
+  #home .logout-btn {
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 576px) {
+  .alert {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  #success-cr p,
+  #failed-cr p {
+    font-size: 13px;
+  }
+
+  #login h1,
+  #signup h1 {
+    font-size: 19px;
+  }
+
+  #login i,
+  #signup i {
+    font-size: 13px;
+  }
+
+  .new-txt::after {
+    width: 17%;
+  }
+
+  .new-txt::before {
+    width: 17%;
+  }
+
+  button,
+  input,
+  label {
+    font-size: 13px !important;
+  }
+}

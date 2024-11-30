@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create your account in just a few steps. Sign up with your email and start exploring our features today."
+    />
+
+    <!-- Title -->
+    <title>Assignment 10</title>
+    <!-- Link Tags -->
+    <link rel="shortcut icon" href="./images/favIco.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mq.css" />
+  </head>
+  <body>
+    <div id="success-cr" class="bg-light p-2 rounded-3 translate-middle-x">
+      <p class="m-0 parkinsans-font">
+        <i class="fa-solid fa-circle-check text-success me-1"></i>
+        Your account was created successively
+      </p>
+    </div>
+    <div id="failed-cr" class="bg-light p-2 rounded-3 translate-middle-x">
+      <p class="m-0 parkinsans-font">
+        <i class="fa-solid fa-circle-exclamation me-1 text-danger"></i>
+        E-mail Already Exist
+      </p>
+    </div>
+    <div
+      id="signup"
+      class="d-flex align-items-center justify-content-center flex-column w-100 hide vh-100 overflow-y-scroll py-3"
+    >
+      <div class="w-adjust-auto bg-light shadow-lg rounded-4 p-4">
+        <h1 class="parkinsans-font mb-1 text-center">Create an account</h1>
+        <p class="goLogin text-center mb-4 parkinsans-font">
+          Already have an account?
+          <span class="login-back text-decoration-underline">Log in</span>
+        </p>
+        <div class="form">
+          <div class="mb-3">
+            <label
+              for="nameInputSignup"
+              class="form-label text-secondary sans-font"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="form-control sans-font bg-light"
+              id="nameInputSignup"
+            />
+            <div
+              id="nameAlertSignup"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Invalid Name
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="emailInputSignup"
+              class="form-label text-secondary sans-font"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control sans-font bg-light"
+              id="emailInputSignup"
+            />
+            <div
+              id="emailAlertSignout"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Invalid E-mail
+            </div>
+            <div
+              id="emailAlertExist"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              E-mail Already Exist
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <label
+                for="passwordInputSignup"
+                class="form-label text-secondary sans-font"
+                >Your password</label
+              >
+              <div>
+                <i id="passwordSignupHide" class="fa-solid fa-eye-slash"></i>
+                <i id="passwordSignupUnHide" class="fa-solid fa-eye hide"></i>
+              </div>
+            </div>
+            <input
+              type="password"
+              class="form-control sans-font bg-light"
+              id="passwordInputSignup"
+            />
+            <div
+              id="passwordAlertSignup"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Invalid Password
+            </div>
+          </div>
+          <div class="mb-5">
+            <div class="d-flex justify-content-between">
+              <label
+                for="confirmPasswordInputSignup"
+                class="form-label text-secondary sans-font"
+                >Confirm your password</label
+              >
+              <div>
+                <i
+                  id="passwordConfirmSignupHide"
+                  class="fa-solid fa-eye-slash"
+                ></i>
+                <i
+                  id="passwordConfirmSignupUnHide"
+                  class="fa-solid fa-eye hide"
+                ></i>
+              </div>
+            </div>
+            <input
+              type="password"
+              class="form-control sans-font bg-light"
+              id="confirmPasswordInputSignup"
+            />
+            <div
+              id="passwordConfirmAlertSignup"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Passwords mismatch
+            </div>
+          </div>
+          <button
+            type="button"
+            class="login-btn btn btn-secondary sans-font w-adjust-auto m-auto d-block rounded-5"
+            id="createAccBtn"
+          >
+            Create an account
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="login"
+      class="d-flex align-items-center justify-content-center flex-column vh-100 w-100"
+    >
+      <div class="w-adjust-auto bg-light shadow-lg rounded-4 p-4">
+        <h1 class="parkinsans-font mb-5 text-center">Sign in</h1>
+        <div class="form">
+          <div class="mb-3">
+            <label
+              for="emailInputLogin"
+              class="form-label text-secondary sans-font"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control sans-font bg-light"
+              id="emailInputLogin"
+            />
+            <div
+              id="emailAlertLogin"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Invalid E-mail
+            </div>
+          </div>
+          <div class="mb-5">
+            <div class="d-flex justify-content-between">
+              <label
+                for="passwordInputLogin"
+                class="form-label text-secondary sans-font"
+                >Your password</label
+              >
+              <div>
+                <i id="passwordLoginHide" class="fa-solid fa-eye-slash"></i>
+                <i id="passwordLoginUnHide" class="fa-solid fa-eye hide"></i>
+              </div>
+            </div>
+            <input
+              type="password"
+              class="form-control sans-font bg-light"
+              id="passwordInputLogin"
+            />
+            <div
+              id="passwordAlertLogin"
+              class="alert alert-danger mt-2 hide sans-font"
+              role="alert"
+            >
+              Invalid Password
+            </div>
+          </div>
+          <button
+            type="button"
+            class="login-btn btn btn-secondary sans-font w-50 m-auto d-block rounded-5"
+            id="loginBtn"
+          >
+            Log in
+          </button>
+        </div>
+      </div>
+      <div class="w-adjust-auto my-5 bg-white">
+        <h4 class="new-txt text-center parkinsans-font fw-light mb-0">
+          New to our community
+        </h4>
+      </div>
+      <div class="w-adjust-auto bg-white">
+        <button
+          type="button"
+          class="signup-btn btn btn-outline-secondary sans-font rounded-4 w-100"
+          id="goToSignup"
+        >
+          Create an account
+        </button>
+      </div>
+    </div>
+    <div id="home" class="hide">
+      <button class="logout-btn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </button>
+      <div
+        class="head d-flex justify-content-center align-items-center vh-100 bg-transparent"
+      >
+        <h1 class="parkinsans-font">
+          Hello,
+          <span id="userNameHome"></span>
+        </h1>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
